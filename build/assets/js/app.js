@@ -56,11 +56,22 @@ angular.module('application')
   });
 angular.module('application').controller('homeCtrl',
   ['$scope', '$interval', '$dbApi','$timeout',  function($scope, $interval, $dbApi, $timeout){
-    var height = screen.height - 100;
-    var width = screen.width - 100;
+    var height;
+    var width;
+    var figurasTimes;
+    if(screen.width <= 500){
+      figurasTimes = 3;
+      height = screen.height - 150;
+      width = screen.width - 150;
+    }
+    else{
+      figurasTimes = 10;
+      height = screen.height - 100;
+      width = screen.width - 100;
+    }
     var elements = [];
     var figuras = ['cruz.png', 'cuadro.png', 'curculo.png', 'punteado.png'];
-    for(var times = 0; times < 10; times++){
+    for(var times = 0; times < figurasTimes; times++){
       for(var figi = 0; figi < figuras.length; figi++){
         var randomTime = Math.floor(Math.random() * 5) + 2;
         var element1 = angular.element('<img style="-webkit-animation: appear ' + randomTime +'s infinite; animation: appear ' + randomTime +'s infinite;" src="./assets/images/' + figuras[figi] + '">');
