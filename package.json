@@ -1,0 +1,17 @@
+{
+  "name": "chicleypegaconstruct",
+  "version": "1.0.0",
+  "description": "pagina de construccion de cyp",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "construct",
+    "chicye",
+    "y",
+    "pega"
+  ],
+  "author": "zymonogatari",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+<div class="centrar">
+	<div class="contenedor">
+		<div class="formulario">
+			<div class="chicle">
+				<img src="/assets/images/chicle-contacto.png" alt="" ng-show="!form" ng-click="form = true;">
+			</div>
+			<div class="form" ng-show="form">
+				<div class="form-title-div">
+					<i class="fa fa-times-circle fa-2x close-form" aria-hidden="true" ng-click="form=false;"></i>
+					<h3>
+						CONTACTO
+					</h3>
+				</div>
+				<form  ng-submit="sendRegsit()">
+					<input type="text" placeholder="Nombre" class="text-input" ng-model="regist.name" required="">
+					<input type="email" placeholder="E-Mail" class="text-input" ng-model="regist.email" required="">
+					<textarea placeholder="Mensaje" class="text-area" ng-model="regist.comment" required=""></textarea>
+					<input type="submit" class="submit-button">
+				</form>
+			</div>
+		</div>
+		<div class="logo">
+		  	<img src="/assets/images/chicle-logo-2.png" alt="Slogan Chicle y pega Creativo">
+		 </div>
+		 <!--<h2>ESTAMOS TRABAJANDO EN NUESTRA PÁGINA</h2>-->
+		 <div class="zapato">
+		 	<img src="/assets/images/zapato.png" alt="Logo chicle y pega animado">
+		 </div>
+		 <div class="barra-carga">
+		 	<div class="barra"></div>
+		 </div>
+		 <div class="redes">
+		 	<h2>¿ESTÁS LISTO PARA UNA SOBREDOSIS CREATIVA DE IDEAS PEGAJOSAS QUE TENEMOS PARA TI?</h2>
+		 	<p>Síguenos en Redes Sociales</p>
+		 	<a href="#"><img src="/assets/images/facebook-chichle.png" alt=""></a>
+		 	<a href="#"><img src="/assets/images/instagram-chicle.png" alt=""></a>
+		 	<div class="riesgo">
+		 		BAJO TU PROPIO RIESGO.
+		 	</div>
+		 </div>
+	</div>
+</div>
