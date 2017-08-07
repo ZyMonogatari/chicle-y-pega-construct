@@ -56,7 +56,7 @@ angular.module('application')
   });
 angular.module('application').controller('homeCtrl',
   ['$scope', '$interval', '$dbApi','$timeout',  function($scope, $interval, $dbApi, $timeout){
-    var height = screen.height;
+    var height = screen.height - 100;
     var width = screen.width - 100;
     var elements = [];
     var figuras = ['cruz.png', 'cuadro.png', 'curculo.png', 'punteado.png'];

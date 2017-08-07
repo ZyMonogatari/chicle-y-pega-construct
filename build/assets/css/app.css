@@ -8225,8 +8225,10 @@ body {
   height: 100%;
   position: relative; }
 
+/* estilos formulario y chicle*/
 .formulario {
-  position: absolute; }
+  position: absolute;
+  top: 20%; }
 
 .formulario .chicle {
   top: 20%; }
@@ -8236,11 +8238,11 @@ body {
 
 .formulario .form {
   width: 150%;
-  background: rgba(255, 255, 255, 0.4); }
+  background: rgba(255, 255, 255, 0.7); }
 
 .formulario .form .form-title-div {
   width: 100%;
-  background: #9F2246; }
+  background: #b72946; }
 
 .formulario .form .form-title-div h3 {
   color: white; }
@@ -8273,6 +8275,7 @@ body {
   font-size: 22px;
   padding: 0; }
 
+/* estilos formulario y chicle*/
 .logo {
   margin: 0 auto;
   width: 55%;
@@ -8365,3 +8368,24 @@ body {
     margin: 0 auto;
     width: 50%;
     max-width: 1024px; } }
+
+@media only screen and (max-width: 786px) {
+  .logo {
+    width: 85%; }
+  .formulario .chicle {
+    top: 20%;
+    width: 40%; }
+  .formulario .chicle img {
+    width: 100%; }
+  .zapato {
+    width: 70%; }
+  .barra-carga {
+    width: 80%; }
+  .redes h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    margin: 25px 10px; }
+  .redes img {
+    width: 40px; }
+  .riesgo {
+    width: 80%; } }
