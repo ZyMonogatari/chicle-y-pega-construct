@@ -59,6 +59,12 @@ angular.module('application').controller('homeCtrl',
     var height;
     var width;
     var figurasTimes;
+    $scope.form = false;
+    $scope.disappearForm = function(){
+       $timeout(function(){
+        $scope.form = false;
+      }, 2000)
+    }
     if(screen.width <= 500){
       figurasTimes = 3;
       height = screen.height;
