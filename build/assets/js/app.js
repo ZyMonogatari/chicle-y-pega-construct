@@ -79,7 +79,8 @@ angular.module('application').controller('homeCtrl',
       }
     }
     for(var elementsi = 0; elementsi < elements.length; elementsi++){
-      var body = angular.element(document).find('body').eq(0);
+      var body = angular.element(document.getElementById('figurasContainer'));
+      console.log(body);
       randomMoveElement();
       body.append(elements[elementsi]);
     }
